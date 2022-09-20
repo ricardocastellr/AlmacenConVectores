@@ -5,7 +5,8 @@ Se va a controlar un inventario de productos, de los que se guarda:
 - Nombre.
 - Cantidad.
 - Costo.
-Utilizando un vector y podremos:
+
+Utilizando vectores y podremos:
 - Agregar.
 - Buscar por codigo. 
 - Eliminar por codigo. 
