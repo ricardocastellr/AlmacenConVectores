@@ -1,4 +1,4 @@
-const almacen = new Inventario();
+const miInv = new Inventario();
 
 //Boton agregar.
 const agregar = document.getElementById("btnAgregar");
