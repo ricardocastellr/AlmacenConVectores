@@ -7,7 +7,7 @@ class Producto{
     }
     informacionProducto(){
         return document.getElementById("listado").innerHTML = `<h4>Código: ${this.codigo} - Nombre: ${this.nombre}</h4>
-        <p>Cantidad: ${this.cantidad} - Precio: $${this.costo}</p>
+        <p>Cantidad: ${this.cantidad} - Costo: $${this.costo}</p>
         <p>-----------------------------------------</p>`;
     }
 }
