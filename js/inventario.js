@@ -6,8 +6,11 @@ class Producto{
         this.costo = costo;
     }
     informacionProducto(){
-        return document.getElementById("listado").innerHTML = `<h4>Código: ${this.codigo} - Nombre: ${this.nombre}</h4>
-        <p>Cantidad: ${this.cantidad} - Costo: $${this.costo}</p>
+        return document.getElementById("listado").innerHTML = 
+        `<h3>CÓDIGO: ${this.codigo}.</h3>
+        <h4>Nombre: ${this.nombre}.<br>
+        Cantidad: ${this.cantidad}.<br>
+        Costo: $${this.costo}.</h4>
         <p>-----------------------------------------</p>`;
     }
 }
@@ -49,24 +52,24 @@ class Inventario{
     }
 
     listar(){
-        let lista = "";
+        let productos = "";
         if(this.productos.length>0){
             for(let i=0; i<this.productos.length ;i++)
-                lista += this.productos[i].informacionProducto();
+                productos += this.productos[i].informacionProducto();
         }else 
             return false;
         
-        return lista;
+        return productos;
     }
 
     listarInverso(){
-        let lista = "";
+        let productos = "";
         if(this.productos.length>0){
             for(let i=this.productos.length-1; i>=0 ;i--)
-                lista += this.productos[i].informacionProducto();
+                productos += this.productos[i].informacionProducto();
         }else 
             return false;
 
-        return lista;
+        return productos;
     }
 }
